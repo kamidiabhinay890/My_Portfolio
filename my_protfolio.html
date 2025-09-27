@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+     </header>
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Kamidi Abhinay Reddy</h1>
+            <h3>And I'm a <span class="multiple-text">Full Stack Developer</span></h3>
+            <p>I am a fresher aspiring to become a Full Stack Developer with skills in front-end (HTML, CSS, JavaScript, Angular/React) and back-end (Java/Python, MySQL, MongoDB).  
+                   I love building web applications and am eager to learn and grow in the IT industry.
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/abhinaykamidi.abhinaykamidi/about/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/posts/kamidi-abhinay-reddy-653633297_activity-7369316955457011716-h_yA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfRgt8BWBc7PKZWeM183jIJBcUfaAHDPQ8" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kamidiabhinay890" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <a href="/Assets/KAMIDI_ABHINAY_RESUME.pdf" target="_blank" class="btn">Download CV</a>
+
+        </div>
+        <div class="home-img">
+            <img src="/Assets/abhi.png" alt="">
+
+        </div>
+
+     </section>
+    <!--ABOUT SECTION DESIGN-->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="/Assets/aa.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <!-- <h3>Full Stack Developer</h3> -->
+            <p id="content-to-reveal" class="box">I am a fresher aspiring to become a Full Stack Developer with skills in front-end (HTML, CSS, JavaScript, Angular/React) and back-end (Python, MySQL, MongoDB).  
+                   I love building web applications and am eager to learn and grow in the IT industry.</p>
+                   <a href="#about" class="btn" onclick="toggleContent('content-to-reveal')">View</a>
+        </div>
+
+     </section>
+
+     <!--skills section-->
+     <section class="skills-section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <li class="skill">HTML</li>
+      <li class="skill">CSS</li>
+      <li class="skill">JavaScript</li>
+      <li class="skill">Python</li>
+      <li class="skill">NumPy</li>
+      <li class="skill">MySQL</li>
+      <li class="skill">Pandas</li>
+      <li class="skill">Matplotlib</li>
+    </div>
+  </section>
+
+  <!--Projects section-->
+  <section class="project" id="projects">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="project-container">
+        <div class="project-box">
+            <img src="/Assets/bs.jpg" alt="">
+            <div class="project-layer">
+                <h3>Building Search Engine Using Machine Learning</h3>
+<p><pre>Developed a search engine that delivers rele
+-vant and ranked results using ML algorithms.</pre></p>
+                <a href="/Assets/md.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+         <div class="project-box">
+            <img src="/Assets/c2.jpg" alt="">
+            <div class="project-layer">
+                <h3>Converting 2D to 3D Image</h3>
+                <p> <pre>Developed a project to convert 2D 
+        images into 3D format using Python.</pre></p>
+           <a href="/Assets/g(group).pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="/Assets/hb.jpg" alt="">
+            <div class="project-layer">
+                <h3>Heart Beat Sensor Using Arduino</h3>
+                <p> <pre>To design real time heart rate monitoring system that measures and displays
+person heart rate using an Arduino and heart beat sensor. It is more easy to 
+monitor the rate is to use a Heartbeat Sensor. It comes in different shapes
+and sizes and allows an instant way to measure the heartbeat.</pre></p>
+            <a href="/Assets/g mini.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+  </section>
+
+  <!--contact section-->
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#" id="contactForm">
+        <div class="input-box">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" id="mobile" placeholder="Mobile Number">
+            <input type="text" id="subject" placeholder="Email Subject">
+
+        </div>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+
+  </section>
+
+  <!--footer section-->
+  <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by @hererestthecode | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+  </footer>
+<!--scroll reveal js-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--typed js-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!--main js-->
+  <script src="./scriptJS.js"></script>
+</body>
+</html>
